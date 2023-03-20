@@ -1,0 +1,7 @@
+# Date : 12/1/21, 4:52 PM
+REDIS_KEY=VrwIGrI6H6p08lL1RGl4Hiy925T32OhtrAzCaP56Bqc=
+REDIS_URL=rediswesteurope52676.redis.cache.windows.net
+BlobStoreConnection=DefaultEndpointsProtocol=https;AccountName=sccstorewesteurope52676;AccountKey=Lmfq2hFTUHlnrKSEyg2yGg/Kka0AbUYO7sKbRk5urJzIFM218UIGZmm4+sJi4ORxl/8F4WArcYJA/FddaPPw4g==;EndpointSuffix=core.windows.net
+COSMOSDB_KEY=Kai2wWoby5SrGNOoc2tSn89bu9KXDleF2Id4U7wly5iLeApkt60L5XRO3UtZbc2L2ZfWPpYo25XaG5nm7X9Ekg==
+COSMOSDB_URL=https://scc212252676.documents.azure.com:443/
+COSMOSDB_DATABASE=scc2122db52676

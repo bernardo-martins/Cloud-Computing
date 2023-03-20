@@ -1,0 +1,25 @@
+config:
+  target: 'https://scc2122appwesteurope53292.azurewebsites.net/rest'
+  plugins:
+    metrics-by-endpoint: {}
+  processor: "./test-utils.js"
+  variables:
+    metricsProcessEndpoint : "myProcessEndpoint"  # function used to aggregate endpoints for statistics
+
+  phases:
+  - name: "Delete users"    
+    duration: 1
+    arrivalCount: 1
+
+scenarios:
+  - name: 'Delete users'
+    weight: 1
+    flow:
+      - loop:    
+        - function: "genNewDelUser"                   
+        - delete:
+            url: "/users/delete/{{ id }}"
+            headers:
+              Content-Type: application/json
+              Accept: application/json
+        whileTrue: "statusReady"
